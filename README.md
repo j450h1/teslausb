@@ -122,7 +122,7 @@ For example, you could use `export TESLAUSB_HOSTNAME=teslausb-ModelX`
 Make sure that whatever you speicfy for the new hostname is compliant with the rules for DNS hostnames; for example underscore (_) is not allowed, but dash (-) is allowed.  Full rules are in RFC 1178 at https://tools.ietf.org/html/rfc1178
 
 ### Set up the USB storage functionality
-1. Run these commands:
+1. Run these commands (ensure you are in the /root/bin folder first):
     ```
     wget https://raw.githubusercontent.com/marcone/teslausb/main-dev/setup/pi/setup-teslausb
     chmod +x setup-teslausb
