@@ -166,6 +166,23 @@ sudo -i
 ```
 Then make whatever changes you need to. The next time the system boots the partitions will once again be read-only.
 
+## Optional: Updating to the latest software version of this repo (or reinstalling with updated configuration) 
+
+You do not need to reflash a newer image to get the latest version. After making the system writable (above), execute the following commands:
+
+```
+# optionally make any configuration changes first - (ensure you are in the /root directory)
+cat teslausb_setup_variables.conf # view current configuration settings
+nano teslausb_setup_variables.conf # edit any configuration settings if desired
+```
+
+```
+cd /bin # switch over to bin folder from root directory
+./setup-teslausb # execute the setup script to overwrite older version
+```
+
+You can now reboot and you should be upgraded to the latest version!
+
 ## Meta
 This repo contains steps and scripts originally from [this thread on Reddit]( https://www.reddit.com/r/teslamotors/comments/9m9gyk/build_a_smart_usb_drive_for_your_tesla_dash_cam/)
 
